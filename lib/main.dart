@@ -16,7 +16,7 @@ class Whatsapp extends StatelessWidget {
     double days = 30;
     return MaterialApp(
       // home: HomePage(),
-
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
           primarySwatch: Colors.deepPurple,
@@ -28,7 +28,7 @@ class Whatsapp extends StatelessWidget {
       ),
 
       routes: {
-        "/" : (context)=>LoginPage(),
+        "/" : (context)=>HomePage(),
         "/login" : (context)=>LoginPage(),
       },
     );
